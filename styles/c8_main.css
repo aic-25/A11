@@ -143,12 +143,12 @@ aside {
 }
 aside h2 {
 	color: #800000;
-	font-size: 130%;
+	font-size: 125%;
 	padding: .5em 0 .25em 0;
 }
 
 aside h3 {
-	font-size: 105%;
+	font-size: 110%;
 	padding-bottom: .25em;
 }
 aside img {
@@ -166,3 +166,47 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+#mobile_menu {
+	display: none;
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 730px) {
+	section h1 {
+		font-size: 125%;
+	}
+	section h2, aside h2 {
+		font-size: 110%;
+	}
+	aside h3 a {
+		font-size: 85%;
+	}
+@media only screen and (max-width: 645px) {
+	header img{
+		
+		float: none;
+	}
+	header{
+		text-align: center;
+	}
+	section{
+		float: none;
+		width: 95%;
+	}
+	aside{
+		float: none;
+		width: 95%;
+		padding-right: 2.5%;
+	}
+	article img{
+		sax-width: 30%;
+	}
+	aside{
+		column-count: 2;	
+	}
+	#nav_menu{
+		display: none;
+	}
+
+	
+	
