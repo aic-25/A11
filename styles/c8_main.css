@@ -17,11 +17,12 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
+	background-image: -moz-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: -webkit-linear-gradient(
 	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -45,6 +46,7 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+
 /* the styles for the navigation menu */
 #nav_menu ul {
 	list-style-type: none;
@@ -84,6 +86,7 @@ header img {
     clear: both;
     display: block;
 }
+
 /* the styles for the main content */
 main {
 	clear: left;
@@ -150,7 +153,6 @@ aside h2 {
 	font-size: 125%;
 	padding: .5em 0 .25em 0;
 }
-
 aside h3 {
 	font-size: 110%;
 	padding-bottom: .25em;
@@ -163,7 +165,6 @@ aside img {
 footer {
 	background-color: #931420;
 	clear: both;
-
 }
 footer p {
 	text-align: center;
@@ -185,36 +186,48 @@ footer p {
 	aside h3 a {
 		font-size: 85%;
 	}
+	#mobile_menu {
+		display: block; /* Show the mobile menu in this range */
+	}
+	#nav_menu {
+		display: none; /* Hide the full menu */
+	}
+}
+
+/* smaller screen styles (max-width: 645px) */
 @media only screen and (max-width: 645px) {
-	header img{
-		
+	header img {
 		float: none;
 	}
-	header{
+	header {
 		text-align: center;
 	}
-	section{
+	section {
 		float: none;
 		width: 95%;
 	}
-	aside{
+	aside {
 		float: none;
 		width: 95%;
 		padding-right: 2.5%;
 	}
-	article img{
-		sax-width: 30%;
+	article img {
+		max-width: 30%; /* Corrected the typo sax-width to max-width */
 	}
-	aside{
-		column-count: 2;	
+	aside {
+		column-count: 2;
 	}
-	#nav_menu{
+	#nav_menu {
 		display: none;
 	}
-/* tablet landscape to mobile portrait */
-	
-@media only screen and (max-width: 959px) {
-	section h1 { font-size: 135%; }
-	section h2, aside h2 { font-size: 120%; }
 }
-	
+
+/* tablet landscape to mobile portrait */
+@media only screen and (max-width: 959px) {
+	section h1 {
+		font-size: 135%;
+	}
+	section h2, aside h2 {
+		font-size: 120%;
+	}
+}
