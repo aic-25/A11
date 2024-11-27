@@ -145,3 +145,13 @@
 .slicknav_nav .slicknav_txtnode {
 	margin-left: 15px;
 }
+
+@media (max-width: 730px) {
+    #nav_menu {
+        display: none; /* Hide full menu */
+    }
+
+    #mobile_menu {
+        display: block; /* Show mobile menu */
+    }
+}
